@@ -18,3 +18,12 @@ class AccountCreationForm(UserCreationForm):
             self.error_messages['duplicate_username'],
             code='duplicate_username',
             )
+
+    def test_clean_username(self):
+        username = self.cleaned_data["username"]
+        if Account.objects.filter(username=username).count() == 0:
+            return username
+        raise forms.ValidationError(
+            self.error_messages['duplicate_username'],
+            code='duplicate_username',
+            )

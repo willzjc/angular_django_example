@@ -28,3 +28,6 @@ staticfiles/
 .project
 .pydevproject
 .directory
+
+# Others
+.*.swp
