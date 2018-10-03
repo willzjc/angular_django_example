@@ -1,0 +1,12 @@
+myproject
+  db.sqlite
+  manage.py
+
+ > myproject
+   init.py
+   settings.py urls.py wsgi.py
+
+  > api
+    init.py
+    admin.py apps.py models.py tests.py views.py
+
