@@ -39,8 +39,8 @@
 
         /**
          * @name create
-         * @desc Create a new Post
-         * @param {string} content The content of the new Post
+         * @desc Create a new song
+         * @param {string} content The content of the new song entry
          * @returns {Promise}
          * @memberOf thinkster.posts.services.Posts
          */

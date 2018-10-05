@@ -2,12 +2,12 @@ from django.conf.urls import patterns, url, include
 from django.contrib import admin
 from rest_framework_nested import routers
 from .authentication.views import AccountViewSet, LoginView, LogoutView
-from .posts.views import AccountPostsViewSet, PostViewSet
+from .posts.views import AccountPostsViewSet, SongViewSet
 from .views import IndexView
 
 router = routers.SimpleRouter()
 router.register(r'accounts', AccountViewSet)
-router.register(r'posts', PostViewSet)
+router.register(r'posts', SongViewSet)
 accounts_router = routers.NestedSimpleRouter(
     router, r'accounts', lookup='account'
 )

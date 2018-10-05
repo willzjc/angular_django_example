@@ -34,3 +34,4 @@ staticfiles/
 env/
 
 archived/
+archived/*

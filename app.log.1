@@ -1,0 +1,529 @@
+ERROR 2018-10-05 01:36:51,237 base 25486 140051749787392 Internal Server Error: /admin/posts/post/
+Traceback (most recent call last):
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 1273, in render
+    _dict = func(*resolved_args, **resolved_kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 311, in result_list
+    headers = list(result_headers(cl))
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 102, in result_headers
+    return_attr=True
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 342, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'rating' on Post or PostAdmin
+ERROR 2018-10-05 01:37:23,864 base 25486 140051733001984 Internal Server Error: /admin/posts/post/
+Traceback (most recent call last):
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 1273, in render
+    _dict = func(*resolved_args, **resolved_kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 311, in result_list
+    headers = list(result_headers(cl))
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 102, in result_headers
+    return_attr=True
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 342, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'rating' on Post or PostAdmin
+ERROR 2018-10-05 01:58:44,968 base 28144 140331355010816 Internal Server Error: /api/v1/posts/
+Traceback (most recent call last):
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 87, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 202, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 396, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 420, in to_internal_value
+    fields = self._writable_fields
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 59, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 335, in _writable_fields
+    field for field in self.fields.values()
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 328, in fields
+    for key, value in self.get_fields().items():
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 922, in get_fields
+    field_name, info, model, depth
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1045, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1146, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `averge_rating` is not valid for model `Post`.
+ERROR 2018-10-05 01:59:04,827 base 28144 140331257943808 Internal Server Error: /admin/posts/post/
+Traceback (most recent call last):
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 1273, in render
+    _dict = func(*resolved_args, **resolved_kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 311, in result_list
+    headers = list(result_headers(cl))
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 102, in result_headers
+    return_attr=True
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 342, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'rating' on Post or PostAdmin
+ERROR 2018-10-05 02:03:39,690 base 28804 140426749134592 Internal Server Error: /admin/posts/post/
+Traceback (most recent call last):
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/template/base.py", line 1273, in render
+    _dict = func(*resolved_args, **resolved_kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 311, in result_list
+    headers = list(result_headers(cl))
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 102, in result_headers
+    return_attr=True
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 342, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'rating' on Post or PostAdmin
+ERROR 2018-10-05 02:07:16,878 base 29033 140193524819712 Internal Server Error: /api/v1/posts/
+Traceback (most recent call last):
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 87, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 663, in data
+    ret = super(ListSerializer, self).data
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 228, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 603, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 448, in to_representation
+    fields = self._readable_fields
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 59, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 342, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 328, in fields
+    for key, value in self.get_fields().items():
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 922, in get_fields
+    field_name, info, model, depth
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1045, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1146, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `averge_rating` is not valid for model `Post`.
+ERROR 2018-10-05 02:07:21,249 base 29033 140193294182144 Internal Server Error: /api/v1/posts/
+Traceback (most recent call last):
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 87, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 663, in data
+    ret = super(ListSerializer, self).data
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 228, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 603, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 448, in to_representation
+    fields = self._readable_fields
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 59, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 342, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 328, in fields
+    for key, value in self.get_fields().items():
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 922, in get_fields
+    field_name, info, model, depth
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1045, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1146, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `averge_rating` is not valid for model `Post`.
+ERROR 2018-10-05 02:08:21,043 base 29033 140193512756992 Internal Server Error: /api/v1/posts/
+Traceback (most recent call last):
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 87, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 663, in data
+    ret = super(ListSerializer, self).data
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 228, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 603, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 448, in to_representation
+    fields = self._readable_fields
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 59, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 342, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 328, in fields
+    for key, value in self.get_fields().items():
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 922, in get_fields
+    field_name, info, model, depth
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1045, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1146, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `averge_rating` is not valid for model `Post`.
+ERROR 2018-10-05 02:08:21,781 base 29033 140193294182144 Internal Server Error: /api/v1/posts/
+Traceback (most recent call last):
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 87, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 663, in data
+    ret = super(ListSerializer, self).data
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 228, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 603, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 448, in to_representation
+    fields = self._readable_fields
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 59, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 342, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 328, in fields
+    for key, value in self.get_fields().items():
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 922, in get_fields
+    field_name, info, model, depth
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1045, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1146, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `averge_rating` is not valid for model `Post`.
+ERROR 2018-10-05 02:08:29,887 base 29033 140193512756992 Internal Server Error: /api/v1/posts/
+Traceback (most recent call last):
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 87, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 663, in data
+    ret = super(ListSerializer, self).data
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 228, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 603, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 448, in to_representation
+    fields = self._readable_fields
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 59, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 342, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 328, in fields
+    for key, value in self.get_fields().items():
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 922, in get_fields
+    field_name, info, model, depth
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1045, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1146, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `averge_rating` is not valid for model `Post`.
+ERROR 2018-10-05 02:08:34,079 base 29033 140193294182144 Internal Server Error: /api/v1/posts/
+Traceback (most recent call last):
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 87, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 202, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 396, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 420, in to_internal_value
+    fields = self._writable_fields
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 59, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 335, in _writable_fields
+    field for field in self.fields.values()
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 328, in fields
+    for key, value in self.get_fields().items():
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 922, in get_fields
+    field_name, info, model, depth
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1045, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1146, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `averge_rating` is not valid for model `Post`.
+ERROR 2018-10-05 02:09:14,030 base 29033 140193284740864 Internal Server Error: /api/v1/posts/
+Traceback (most recent call last):
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 87, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 663, in data
+    ret = super(ListSerializer, self).data
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 228, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 603, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 448, in to_representation
+    fields = self._readable_fields
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 59, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 342, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 328, in fields
+    for key, value in self.get_fields().items():
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 922, in get_fields
+    field_name, info, model, depth
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1045, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1146, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `averge_rating` is not valid for model `Post`.
+ERROR 2018-10-05 02:09:18,686 base 29033 140193276348160 Internal Server Error: /api/v1/posts/
+Traceback (most recent call last):
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 87, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 202, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 396, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 420, in to_internal_value
+    fields = self._writable_fields
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 59, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 335, in _writable_fields
+    field for field in self.fields.values()
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 328, in fields
+    for key, value in self.get_fields().items():
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 922, in get_fields
+    field_name, info, model, depth
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1045, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/will/git/django/google_material/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1146, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `averge_rating` is not valid for model `Post`.

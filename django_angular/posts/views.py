@@ -2,12 +2,12 @@ from rest_framework import permissions, viewsets
 from rest_framework.response import Response
 from .models import Post
 from .permissions import IsAuthorOfPost
-from .serializers import PostSerializer
+from .serializers import SongSerializer
 
 
-class PostViewSet(viewsets.ModelViewSet):
+class SongViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.order_by('-created_at')
-    serializer_class = PostSerializer
+    serializer_class = SongSerializer
 
     def get_permissions(self):
         if self.request.method in permissions.SAFE_METHODS:
@@ -16,12 +16,12 @@ class PostViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(author=self.request.user)
-        return super(PostViewSet, self).perform_create(serializer)
+        return super(SongViewSet, self).perform_create(serializer)
 
 
 class AccountPostsViewSet(viewsets.ViewSet):
     queryset = Post.objects.select_related('author').all()
-    serializer_class = PostSerializer
+    serializer_class = SongSerializer
 
     def list(self, request, account_username=None):
         queryset = self.queryset.filter(author__username=account_username)
