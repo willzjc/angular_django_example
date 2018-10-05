@@ -15,8 +15,8 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ALLOWED_HOSTS = ['*']
 
 
-ROOT_URLCONF = 'thinkster_django_angular_boilerplate.urls'
-WSGI_APPLICATION = 'thinkster_django_angular_boilerplate.wsgi.application'
+ROOT_URLCONF = 'django_angular.urls'
+WSGI_APPLICATION = 'django_angular.wsgi.application'
 AUTH_USER_MODEL = 'authentication.Account'
 
 
@@ -32,8 +32,8 @@ INSTALLED_APPS = (
     'rest_framework',
     'rest_framework_swagger',
     'compressor',
-    'thinkster_django_angular_boilerplate.authentication',
-    'thinkster_django_angular_boilerplate.posts',
+    'django_angular.authentication',
+    'django_angular.posts',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -174,7 +174,7 @@ LOGGING = {
             'level': 'ERROR',
             'propagate': False,
         },
-        'thinkster_django_angular_boilerplate': {
+        'django_angular': {
             'handlers': ['console', 'logfile', 'mail_admins'],
             'level': 'INFO',
         }
