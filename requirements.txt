@@ -12,6 +12,7 @@ static3==0.6.1
 #wsgiref==0.1.2
 djangocms-admin-style==1.0.7
 django-admin-shortcuts==1.2.6
+numpy
 
 # Optional, recommended packages
 #psycopg2>=2.6.1	# To work with PostgreSQL

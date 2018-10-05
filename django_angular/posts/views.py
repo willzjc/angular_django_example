@@ -27,3 +27,12 @@ class AccountPostsViewSet(viewsets.ViewSet):
         queryset = self.queryset.filter(author__username=account_username)
         serializer = self.serializer_class(queryset, many=True)
         return Response(serializer.data)
+
+class PostRatingsViewSet(viewsets.ViewSet):
+    queryset = Post.objects.select_related('rating_author').all()
+    serializer_class = SongSerializer
+
+    def list(self, request, post_ratings_author=None):
+        queryset = self.queryset.filter(ratings_author__username=post_ratings_author)
+        serializer = self.serializer_class(queryset, many=True)
+        return Response(serializer.data)

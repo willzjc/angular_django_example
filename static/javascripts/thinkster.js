@@ -9,6 +9,7 @@
             'thinkster.layout',
             'thinkster.posts',
             'thinkster.utils',
+            'thinkster.post_details',
             'thinkster.profiles'
         ]);
 

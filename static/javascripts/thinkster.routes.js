@@ -20,6 +20,10 @@
             controller: 'LoginController',
             controllerAs: 'vm',
             templateUrl: '/static/templates/authentication/login.html'
+        }).when('/post_details/+:post_id', {
+            controller: 'PostDetailsController',
+            controllerAs: 'vm',
+            templateUrl: '/static/templates/post_details/post_details.html'
         }).when('/+:username', {
             controller: 'ProfileController',
             controllerAs: 'vm',
