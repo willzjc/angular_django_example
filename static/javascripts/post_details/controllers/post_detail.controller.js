@@ -17,7 +17,7 @@
     function PostDetailController($location, $routeParams, Posts, PostDetail, Snackbar) {
         var vm = this;
 
-        vm.profile = undefined;
+        vm.post_detail = undefined;
         vm.posts = [];
 
         activate();
@@ -28,22 +28,21 @@
          * @memberOf thinkster.post_details.controllers.PostDetailController
          */
         function activate() {
-            var username = $routeParams.username.substr(1);
-            print($routeParams.username);
-            console.log($routeParams.username);
-            PostDetail.get(username).then(profileSuccessFn, profileErrorFn);
+            var post_id = $routeParams.post_id;
+            var post_details = [];
 
-            Posts.get(username).then(postsSuccessFn, postsErrorFn);
+            PostDetail.get(post_id).then(profileSuccessFn, profileErrorFn);
 
-            var post_detail = 'var';
-            Posts.get(post_detail).then(postsSuccessFn, postsErrorFn);
+            // Posts.get(post_id).then(postsSuccessFn, postsErrorFn);
+
+            PostDetail.getRelated(post_id).then(postsSuccessFn, postsErrorFn);
 
             /**
              * @name profileSuccessProfile
              * @desc Update `profile` on viewmodel
              */
             function profileSuccessFn(data, status, headers, config) {
-                vm.profile = data.data;
+                vm.post_detail = data.data;
             }
 
 
@@ -53,7 +52,7 @@
              */
             function profileErrorFn(data, status, headers, config) {
                 $location.url('/');
-                Snackbar.error('That user does not exist.');
+                Snackbar.error('That entry does not exist.');
             }
 
 
@@ -62,7 +61,7 @@
              * @desc Update `posts` on viewmodel
              */
             function postsSuccessFn(data, status, headers, config) {
-                vm.posts = data.data;
+                vm.post_detail = data.data;
             }
 
 

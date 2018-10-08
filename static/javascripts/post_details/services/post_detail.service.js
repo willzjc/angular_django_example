@@ -23,7 +23,8 @@
         var PostDetail = {
             destroy: destroy,
             get: get,
-            update: update
+            getRelated: getRelated
+            // update: update
         };
 
         return PostDetail;
@@ -49,20 +50,24 @@
          * @returns {Promise}
          * @memberOf thinkster.post_details.services.PostDetail
          */
-        function get(username) {
-            return $http.get('/api/v1/post_details/' + username + '/');
+        function get(post_id) {
+            return $http.get('/api/v1/post_details/' + post_id + '/' );
+        }
+
+        function getRelated(post_id) {
+            return $http.get('/api/v1/post_details/' + post_id + '/' );
         }
 
 
-        /**
-         * @name update
-         * @desc Update the given post_detail
-         * @param {Object} post_detail The post_detail to be updated
-         * @returns {Promise}
-         * @memberOf thinkster.post_details.services.PostDetail
-         */
-        function update(post_detail) {
-            return $http.put('/api/v1/post_details/' + post_detail.username + '/', post_detail);
-        }
+        // /**
+        //  * @name update
+        //  * @desc Update the given post_detail
+        //  * @param {Object} post_detail The post_detail to be updated
+        //  * @returns {Promise}
+        //  * @memberOf thinkster.post_details.services.PostDetail
+        //  */
+        // function update(post_detail) {
+        //     return $http.put('/api/v1/post_details/' + post_detail.post_id + '/', post_detail);
+        // }
     }
 })();

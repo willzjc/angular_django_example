@@ -6,12 +6,12 @@ class SongAdmin(admin.ModelAdmin):
     ordering = ('-updated_at',)
     list_display = ('content', 'author')
 
-class RadingAdmin(admin.ModelAdmin):
-    search_fields = ('rating','rating_author')
+class RatingAdmin(admin.ModelAdmin):
+    search_fields = ('rating','post_id__rating_author','post_id__rating')
     ordering = ('-rating_author',)
     list_display = ('song', 'rating', 'rating_author')
 
 admin.site.register(Post, SongAdmin)
 
 
-admin.site.register(Rating, RadingAdmin)
+admin.site.register(Rating, RatingAdmin)
