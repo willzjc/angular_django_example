@@ -13,7 +13,10 @@ class Post(models.Model):
     def average_rating(self):
         all_ratings = map(lambda x: x.rating, self.rating_set.all())
         avg=np.mean(all_ratings)
-        print avg
+        # print 'avg is:',avg
+        # print type(avg)
+        if np.isnan(avg):
+            avg='Not Rated yet'
         return avg
 
     def __unicode__(self):
